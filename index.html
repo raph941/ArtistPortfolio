@@ -62,6 +62,57 @@
   <section class="frames__section">
     <h1 class="title row pl-sm-2 ">Frames</h1>
 
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide d-flex flex-column flex-sm-row">
+                <div class="col-12 col-sm-6 pl-sm-5">
+                    <img class="image-fluid slide__image" src="./images/frame.svg" alt="slide-image"/>
+                </div>
+                <div class="col-12 col-sm-6 align-self-center pr-sm-5">
+                    <div class="card-title slide-title">The Raft of Medussa</div>
+                    <p>Painted in late fall summer spring on 1806, it depicts the melting away of inhibitions. The basic idea was to create a piece that spoke to many although represented by what seems to be a form.</p>
+                </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column flex-sm-row">
+                <div class="col-12 col-sm-6 pl-sm-5">
+                    <img class="image-fluid slide__image" src="./images/frame.svg" alt="slide-image"/>
+                </div>
+                <div class="col-12 col-sm-6 align-self-center pr-sm-5">
+                    <div class="card-title slide-title">The Raft of Medussa</div>
+                    <p>Painted in late fall summer spring on 1806, it depicts the melting away of inhibitions. The basic idea was to create a piece that spoke to many although represented by what seems to be a form.</p>
+                </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column flex-sm-row">
+                <div class="col-12 col-sm-6 pl-sm-5">
+                    <img class="image-fluid slide__image" src="./images/frame.svg" alt="slide-image"/>
+                </div>
+                <div class="col-12 col-sm-6 align-self-center pr-sm-5">
+                    <div class="card-title slide-title">The Raft of Medussa</div>
+                    <p>Painted in late fall summer spring on 1806, it depicts the melting away of inhibitions. The basic idea was to create a piece that spoke to many although represented by what seems to be a form.</p>
+                </div>
+            </div>
+            <div class="swiper-slide d-flex flex-column flex-sm-row">
+                <div class="col-12 col-sm-6 pl-sm-5">
+                    <img class="image-fluid slide__image" src="./images/frame.svg" alt="slide-image"/>
+                </div>
+                <div class="col-12 col-sm-6 align-self-center pr-sm-5">
+                    <div class="card-title slide-title">The Raft of Medussa</div>
+                    <p>Painted in late fall summer spring on 1806, it depicts the melting away of inhibitions. The basic idea was to create a piece that spoke to many although represented by what seems to be a form.</p>
+                </div>
+            </div>
+            
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
     <div class="row m-0 mt-5 contact-btn__wrapper d-flex justify-content-center text-center">
         <button type="submit" class="btn contact__btn" >See All</button>
     </div>
@@ -157,8 +208,8 @@
         </div>
         <div class="socials d-flex flex-column col-12 col-sm-3">
             <h5 class="footer__subtitles">Socials</h5>
-            <p class="mb-0 footer__text"><i class="fas fa-twitter" aria-hidden="true"></i> Twitter</p>
-            <p class="mb-0 footer__text"> <i class="fas fa-instagram" aria-hidden="true"></i> Instagram</p>
+            <p class="mb-0 footer__text"><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</p>
+            <p class="mb-0 footer__text"> <i class="fab fa-instagram" aria-hidden="true"></i> Instagram</p>
             <p class="mb-0 footer__text"> <i class="fa fa-coffee" aria-hidden="true"></i> Buy me coffee</p>
         </div>
         <div class="newsletter d-flex flex-column col-12 col-sm-4">
@@ -191,6 +242,25 @@
             $( '.navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
             $( this ).parent( 'li' ).addClass( 'active' );
         });
+
+        // Swipper Carousel
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            loop: true,
+            observer: true,
+            observeParents: true,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+              dynamicMainBullets: 4,
+              // bulletClass: 'slider_bullet'
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          })
+      
     </script>
 
   </body>

@@ -72,12 +72,29 @@ body {
 
 /* Framses Start */
 .frames__section{
-    padding: 80px;
+    padding: 80px 80px 0px 80px;
+}
+
+.slide__image{
+    width: inherit;
+}
+
+.slide-title{
+    color: black !important;
+}
+
+.swiper-pagination{
+    position: relative;
+    padding-top: 30px;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: #333333;
 }
 
 @media (max-width: 576px){
     .frames__section {
-        padding: 110px 32px 58px 32px;
+        padding: 110px 32px 0px 32px;
     }
 }
 
@@ -87,7 +104,7 @@ body {
 
 @media (min-width: 576px) and (max-width: 810px) {
     .frames__section{
-        padding: 40px 40px 40px 40px;
+        padding: 40px 40px 0px 40px;
     }
 }
 
