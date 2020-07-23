@@ -34,12 +34,15 @@ body {
 /* Navbar Starts */
 .navbar__wrapper{
     box-shadow: 0px 0.5px 10px rgba(0, 0, 0, 0.15);
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .nav-link{
     font-size: 16px;
     color: #000000;
     line-height: 16px;
+    padding: 20px;
 }
 
 .navbar-nav li.active > a {
@@ -47,28 +50,263 @@ body {
     color: black;
 }
 
+.navbar-toggler{
+    outline: none;
+    box-shadow: none;
+}
+
+#cross {
+    display: none;
+}
+
+#toggle:checked + label i#bars {
+    display: none;
+}
+#toggle:checked + label i#cross {
+    display: block;
+}
+
+@media (max-width: 576px){
+    .navbar__wrapper{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .nav-top-wrap{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .nav-link{
+        color: white;
+    }
+    .nav__subwrap{
+        width: 100vh;
+        padding: 0px 32px 0px 32px;
+        display: flex;
+    }
+    .navbar-brand{
+        margin-right: auto;
+    }
+    .brand__image{
+        width: 100px;
+    }
+    .collapse{
+        background-color: black;
+    }
+    .navbar-nav{
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .navbar-nav li.active > a {
+        color: #F7931E;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 810px) {
+    .navbar__wrapper{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+/* Navbar ends */
+
+/* Masterhead Section Starts */
 .artist__name{
     font-size: 80px;
     line-height: 80px;
 }
 
-.masterhead__section{
+@media (max-width: 576px){
+    .masterhead__section{
+        padding: 0px;
+        height: 600px;
+    }
+    .masterhead-small-img{
+        padding: 0px;
+    }
+    .hero__text{
+        position: absolute;
+        margin-top: 250px;
+        margin-left: 50px;
+    }
+    .artist__name{
+        color: white;
+    }
+    .artist__caption{
+        color: white;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+    .artist__image{
+        height: 622px;
+    }
 }
 
-@media (max-width: 576px){}
+@media (min-width: 380px) and (max-width: 575.98px){
+    .artist__image{
+        height: 600px;
+        width: 100%;
+    }
+    .artist__name{
+        font-size: 100px;
+    }
+}
 
 @media (min-width: 576px){
-    .masterhead__section{
-        margin-top: 48px;
-        margin-bottom: 48px;
+    .about_text_title{
+        font-size: 1.6rem;
+    }
+
+    .artist__name{
+        font-size: 70px;
+        width: max-content;
+    }
+
+    .hero__text{
+        left: 3%;
+        z-index: 1;
     }
 
     .artist__image{
-        width: 469px;
+        width: inherit;
+    }
+    .masterhead-big-img{
+        padding: 0px;
+    }
+    .about__section{
+        margin-top: -50px;
+    }
+
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .masterhead-big-img{
+        padding: 0px;
+    }
+    .hero__text {
+        z-index: 1;
+    }
+    .artist__name{
+        font-size: 57px;
+    }
+    .masterhead__section {
+        margin-top: 48px;
+        margin-bottom: 0px;
+        padding-right: 80px;
+        padding-left: 80px;
     }
 }
 
-/* Navbar ends */
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .masterhead__section {
+        margin-top: 48px;
+        margin-bottom: 0px;
+        padding-right: 120px;
+        padding-left: 120px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .masterhead__section {
+        margin-top: 48px;
+        margin-bottom: 0px;
+        padding-right: 160px;
+        padding-left: 160px;
+    }
+    .masterhead-big-img{
+        padding: 0px;
+    }
+    .hero__text {
+        z-index: 1;
+    }
+    .artist__name{
+        font-size: 89px;
+    }
+}
+
+@media (min-width: 1199.99px) {
+    .masterhead__section {
+        margin-top: 48px;
+        margin-bottom: 0px;
+        padding-right: 180px;
+        padding-left: 180px;
+    }
+}
+
+/* Masterhead Section Ends */
+
+
+/* About Section Starts */
+
+.about__section{
+    padding: 80px 180px 80px 180px;
+    background: #F7931E;
+}
+
+.about__image{
+    width: inherit;
+}
+
+.about__link, .about__link:hover{
+    color: #020202;
+    text-decoration: none;
+}
+
+@media (max-width: 576px){
+    .about__section {
+        padding: 96px 32px 0px 32px;
+        margin-bottom: 50px;
+    }
+    .about__image{
+        margin-bottom: -70px;
+        margin-top: 50px;
+    }
+    .about_text_wrap{
+       
+    }
+}
+
+@media (min-width: 576px){
+    .about_image_wrap{
+        display: flex;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 810px) {
+    .about__section{
+        padding: 40px 60px 40px 60px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .about__section{
+        padding: 40px 80px 40px 80px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .about__section{
+        padding: 40px 120px 40px 120px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .about__section{
+        padding: 40px 160px 40px 160px;
+    }
+}
+
+/* About section ends */
 
 /* Framses Start */
 .frames__section{
@@ -92,9 +330,33 @@ body {
     color: #333333;
 }
 
+.buy__text{
+    color: #AA2072;
+    font-weight:600;
+}
+
+.buy__text:hover {
+    color: #AA2072;
+    text-decoration: none;
+}
+
 @media (max-width: 576px){
     .frames__section {
-        padding: 110px 32px 0px 32px;
+        padding: 96px 32px 0px 32px;
+    }
+    .swiper-button-next {
+        display: none;
+    }
+
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .slide__image{
+        margin-bottom: 30px;
+    }
+    .slider_img_wrap, .slider_text_wrap{
+        padding: 0px;
     }
 }
 
@@ -105,6 +367,10 @@ body {
 @media (min-width: 576px) and (max-width: 810px) {
     .frames__section{
         padding: 40px 40px 0px 40px;
+    }
+
+    .slider_img_wrap{
+        align-self: center;
     }
 }
 
@@ -124,7 +390,7 @@ body {
 
 @media (max-width: 576px){
     .exhibition__section {
-        padding: 110px 32px 58px 32px;
+        padding: 96px 32px 58px 32px;
     }
     .exhibition__card{
         padding: 0px;
@@ -200,7 +466,7 @@ body {
 
 @media (max-width: 576px){
     .contact__section {
-        padding: 110px 32px 58px 32px;
+        padding: 96px 32px 58px 32px;
     }
     .title{
         font-weight: 600;

@@ -16,50 +16,72 @@
   <body>
   <!-- Navbar -->
   <section class="hero__section">
-    <nav class="navbar navbar-expand-md navbar__wrapper">
+    <nav class="navbar navbar-expand-sm navbar__wrapper">
+      <span class="nav__subwrap">
         <a class="navbar-brand" href="#" >
-            <img src="./images/Tairo-Logo.svg" />
+            <img class="brand__image" src="./images/Tairo-Logo.svg" />
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;box-shadow: none;">
+          <input type="checkbox" class="d-none" id="toggle" />
+          <label for="toggle">
+            <i id="bars" class="fa fa-bars" aria-hidden="true"></i>
+            <i id="cross" class="fa fa-times fa-fw"></i>
+          </label>
+          
         </button>
-      
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      </span>
+        <div class="collapse no-gutters navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" >Frames</a>
+              <a class="nav-link" href="#frames" >Frames</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" >Exhibitions</a>
+              <a class="nav-link" href="#exhibitions" >Exhibitions</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" >contact</a>
+              <a class="nav-link" href="#contact" >contact</a>
             </li>
           </ul>
         </div>
     </nav>
     <!-- End navbar -->
     <!-- MasterHead -->
-    <div class="masterhead__section container d-flex">
-        <div class="col-sm-6 align-self-center">
-          <h1 class="artist__name mt-0">Tario Mul<span>ani</span></h1>
-          Award Winning Artist
-        </div>
-        <div class="col-sm-6">
-            <img src="./images/artist-img.svg" class="image-fluid artist__image" alt="...">
-        </div>
+    <div class="masterhead__section d-flex flex-column flex-sm-row">
+          <div class="col-12 col-sm-6 masterhead-small-img d-block d-sm-none">
+            <img src="./images/artist-img2.png" class="image-fluid artist__image" alt="...">
+          </div>
+          <div class="col-12 col-sm-6 align-self-center hero__text">
+            <h1 class="artist__name mt-0">Tario Mul<span style="color: white;">ani</span></h1>
+            <span class="artist__caption">Award Winning Artist</span>
+          </div>
+          <div class="col-12 col-sm-6 d-none d-sm-flex masterhead-big-img">
+              <img src="./images/artist-img.svg" class="d-none d-sm-flex artist__image" alt="...">
+          </div>
     </div>
     <!-- MsterHead ends -->
   </section>
 
+  <!-- About Section starts -->
+  <section id="about" class="about__section d-flex flex-column flex-sm-row">
+    <div class="about_text_wrap col-12 col-sm-5">
+      <h1 class="about_text_title">Tairo is an award winning artist based in New York. </h1>
+      <p class="about__text">Tairo Mulani’s art "negotiates the cultural terrain between his adopted home in America and his native Kenya, creating collage and photo transfer-based paintings that expose the challenges of occupying these two worlds".</p>
+      <a class="about__link" href="#">Read more <i class="fa fa-angle-right" style="font-weight:300" aria-hidden="true"></i></a>
+    </div>
+    <div class="about_image_wrap col-12 col-sm-7">
+      <img class="about__image" src="./images/about.svg" alt="about-image" />
+    </div>
+  </section>
+  <!-- About section ends -->
+
   <!-- Frames Starts -->
-  <section class="frames__section">
+  <section id="frames" class="frames__section">
     <h1 class="title row pl-sm-2 ">Frames</h1>
 
     <!-- Slider main container -->
@@ -68,39 +90,43 @@
         <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide d-flex flex-column flex-sm-row">
-                <div class="col-12 col-sm-6 pl-sm-5">
+                <div class="col-12 col-sm-6 pl-sm-5 slider_img_wrap">
                     <img class="image-fluid slide__image" src="./images/frame.svg" alt="slide-image"/>
                 </div>
-                <div class="col-12 col-sm-6 align-self-center pr-sm-5">
+                <div class="col-12 col-sm-6 align-self-center pr-sm-5 slider_text_wrap">
                     <div class="card-title slide-title">The Raft of Medussa</div>
                     <p>Painted in late fall summer spring on 1806, it depicts the melting away of inhibitions. The basic idea was to create a piece that spoke to many although represented by what seems to be a form.</p>
+                    <a href="#" class="buy__text">Buy <i class="fa fa-angle-right" style="font-weight:300" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="swiper-slide d-flex flex-column flex-sm-row">
-                <div class="col-12 col-sm-6 pl-sm-5">
+                <div class="col-12 col-sm-6 pl-sm-5 slider_img_wrap">
                     <img class="image-fluid slide__image" src="./images/frame.svg" alt="slide-image"/>
                 </div>
-                <div class="col-12 col-sm-6 align-self-center pr-sm-5">
+                <div class="col-12 col-sm-6 align-self-center pr-sm-5 slider_text_wrap">
                     <div class="card-title slide-title">The Raft of Medussa</div>
                     <p>Painted in late fall summer spring on 1806, it depicts the melting away of inhibitions. The basic idea was to create a piece that spoke to many although represented by what seems to be a form.</p>
+                    <a href="#" class="buy__text">Buy <i class="fa fa-angle-right" style="font-weight:300" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="swiper-slide d-flex flex-column flex-sm-row">
-                <div class="col-12 col-sm-6 pl-sm-5">
+                <div class="col-12 col-sm-6 pl-sm-5 slider_img_wrap">
                     <img class="image-fluid slide__image" src="./images/frame.svg" alt="slide-image"/>
                 </div>
-                <div class="col-12 col-sm-6 align-self-center pr-sm-5">
+                <div class="col-12 col-sm-6 align-self-center pr-sm-5 slider_text_wrap">
                     <div class="card-title slide-title">The Raft of Medussa</div>
                     <p>Painted in late fall summer spring on 1806, it depicts the melting away of inhibitions. The basic idea was to create a piece that spoke to many although represented by what seems to be a form.</p>
+                    <a href="#" class="buy__text">Buy <i class="fa fa-angle-right" style="font-weight:300" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="swiper-slide d-flex flex-column flex-sm-row">
-                <div class="col-12 col-sm-6 pl-sm-5">
+                <div class="col-12 col-sm-6 pl-sm-5 slider_img_wrap">
                     <img class="image-fluid slide__image" src="./images/frame.svg" alt="slide-image"/>
                 </div>
-                <div class="col-12 col-sm-6 align-self-center pr-sm-5">
+                <div class="col-12 col-sm-6 align-self-center pr-sm-5 slider_text_wrap">
                     <div class="card-title slide-title">The Raft of Medussa</div>
                     <p>Painted in late fall summer spring on 1806, it depicts the melting away of inhibitions. The basic idea was to create a piece that spoke to many although represented by what seems to be a form.</p>
+                    <a href="#" class="buy__text">Buy <i class="fa fa-angle-right" style="font-weight:300" aria-hidden="true"></i></a>
                 </div>
             </div>
             
@@ -120,7 +146,7 @@
   <!-- Freames Ends -->
 
   <!-- Exhibition starts -->
-  <section class="exhibition__section">
+  <section id="exhibitions" class="exhibition__section">
     <h1 class="title row pl-sm-2 ">Exhibition</h1>
     <div class="row m-0">
         <div class="card col-12 col-sm-6 border-0 exhibition__card">
@@ -163,7 +189,7 @@
 
   <img src="./images/Asset12.svg" class="contact-vector__img"/>
   <!-- contact section -->
-  <section class="contact__section mb-0">
+  <section id="contact" class="contact__section mb-0">
     <span class="d-none d-sm-block">
         <h1 class="title text-center">Contact</h1>
         <p class="contact__subtitle text-center">Leave a message and i would get back to you ASAP</p>
