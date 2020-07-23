@@ -187,9 +187,12 @@ body {
 @media (min-width: 576px) and (max-width: 767.98px) {
     .masterhead-big-img{
         padding: 0px;
+        position: absolute;
     }
     .hero__text {
         z-index: 1;
+        position: absolute;
+        margin-left: 40px;
     }
     .artist__name{
         font-size: 57px;
@@ -199,6 +202,11 @@ body {
         margin-bottom: 0px;
         padding-right: 80px;
         padding-left: 80px;
+        height: 430px;
+    }
+    .artist__image{
+        margin-left: 240px;
+        width: inherit;
     }
 }
 
@@ -209,6 +217,20 @@ body {
         margin-bottom: 0px;
         padding-right: 120px;
         padding-left: 120px;
+        height: 400px;
+    }
+    .hero__text {
+        z-index: 1;
+        position: absolute;
+        margin-left: 40px;
+    }
+    .masterhead-big-img{
+        padding: 0px;
+        position: absolute;
+    }
+    .artist__image{
+        margin-left: 260px;
+        width: inherit;
     }
 }
 
@@ -219,15 +241,26 @@ body {
         margin-bottom: 0px;
         padding-right: 160px;
         padding-left: 160px;
+        height: 400px;
     }
     .masterhead-big-img{
         padding: 0px;
+        position: absolute;
+        margin-left: 40px;
     }
     .hero__text {
         z-index: 1;
     }
     .artist__name{
-        font-size: 89px;
+        font-size: 62px;
+    }
+    .masterhead-big-img{
+        padding: 0px;
+        position: absolute;
+    }
+    .artist__image{
+        margin-left: 260px;
+        width: 350px;
     }
 }
 
@@ -237,6 +270,41 @@ body {
         margin-bottom: 0px;
         padding-right: 180px;
         padding-left: 180px;
+        height: 630px;
+    }
+    .masterhead-big-img{
+        padding: 0px;
+        position: absolute;
+        margin-left: 40px;
+    }
+    .hero__text {
+        z-index: 1;
+    }
+    .artist__name{
+        font-size: 105px;
+    }
+    .masterhead-big-img{
+        padding: 0px;
+        position: absolute;
+    }
+    .artist__image{
+        margin-left: 460px;
+        width: inherit;
+    }
+}
+
+/* Extra Query */
+@media (min-width: 1200px) and (max-width: 1300px) {
+    .artist__image {
+        margin-left: 350px;
+        width: inherit;
+    }
+    .artist__name{
+        font-size: 90px;
+    }
+    .hero__text {
+        left: -2%;
+        z-index: 1;
     }
 }
 
@@ -282,6 +350,9 @@ body {
 @media (min-width: 576px) and (max-width: 810px) {
     .about__section{
         padding: 40px 60px 40px 60px;
+    }
+    .about_text_wrap{
+        padding: 0px;
     }
 }
 
