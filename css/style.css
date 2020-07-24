@@ -230,6 +230,7 @@ body {
     }
     .hero__text{
         position: absolute;
+        left: 0%;
     }
     .artist__name{
         color: white;
