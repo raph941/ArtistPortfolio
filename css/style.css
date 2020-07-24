@@ -110,6 +110,43 @@ body {
     }
 }
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar__wrapper{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .nav-top-wrap{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .nav-link{
+        color: white;
+    }
+    .nav__subwrap{
+        width: 100%;
+        padding: 0px 32px 0px 32px;
+        display: flex;
+    }
+    .navbar-brand{
+        margin-right: auto;
+    }
+    .brand__image{
+        width: 100px;
+    }
+    .collapse{
+        background-color: black;
+    }
+    .navbar-nav{
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .navbar-nav li.active > a {
+        color: #F7931E;
+        text-decoration: none;
+    }
+}
+
 
 /* Navbar ends */
 
@@ -165,7 +202,7 @@ body {
     }
 
     .hero__text{
-        left: 3%;
+        left: 5%;
         z-index: 1;
     }
 
@@ -184,28 +221,26 @@ body {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .masterhead-big-img{
+    .masterhead__section{
         padding: 0px;
-        position: absolute;
+        height: 600px;
     }
-    .hero__text {
-        z-index: 1;
+    .masterhead-small-img{
+        padding: 0px;
+    }
+    .hero__text{
         position: absolute;
-        margin-left: 40px;
     }
     .artist__name{
-        font-size: 57px;
+        color: white;
     }
-    .masterhead__section {
-        margin-top: 48px;
-        margin-bottom: 0px;
-        padding-right: 80px;
-        padding-left: 80px;
-        height: 430px;
+    .artist__caption{
+        color: white;
+        font-weight: 200;
+        text-transform: uppercase;
     }
     .artist__image{
-        margin-left: 240px;
-        width: inherit;
+        height: 550px;
     }
 }
 
@@ -216,7 +251,7 @@ body {
         margin-bottom: 0px;
         padding-right: 120px;
         padding-left: 120px;
-        height: 400px;
+        height: 550px;
     }
     .hero__text {
         z-index: 1;
@@ -276,7 +311,8 @@ body {
         position: absolute;
         margin-left: 40px;
     }
-    .hero__text {
+    .hero__text{
+        left: 0% !important;
         z-index: 1;
     }
     .artist__name{
@@ -493,6 +529,7 @@ body {
     font-size: 61.04px;
     line-height: 61px;
     margin-left: 0px !important;
+    color: 020202;
 }
 
 .contact__subtitle{
@@ -543,7 +580,7 @@ body {
         font-size: 39px;
         line-height: 25px;
         text-transform: capitalize;
-        color: #333333;
+        color: #020202;
         margin-left: 0px !important;
         margin-bottom: 1rem;
     }
@@ -595,6 +632,7 @@ body {
     .title {
         font-size: 45px;
         margin-left: 0px !important;
+        color: #020202;
     }
 }
 
