@@ -247,11 +247,14 @@ body {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
     .masterhead__section {
-        margin-top: 48px;
+        margin-top: 30px;   
         margin-bottom: 0px;
         padding-right: 120px;
         padding-left: 120px;
-        height: 550px;
+        height: 400px;
+    }
+    .artist__name{
+        font-size: 55px;
     }
     .hero__text {
         z-index: 1;
@@ -263,8 +266,10 @@ body {
         position: absolute;
     }
     .artist__image{
-        margin-left: 260px;
+        margin-left: 210px;
         width: inherit;
+        height: 400px;
+        width: 350px
     }
 }
 
@@ -343,6 +348,16 @@ body {
     }
 }
 
+@media (min-width: 1440px){
+    .hero__text {
+        left: 3% !important;
+        z-index: 1;
+    }
+    .artist__image{
+        height: 620px;
+        width: 550px;
+    }
+}
 /* Masterhead Section Ends */
 
 
@@ -409,6 +424,12 @@ body {
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .about__section{
         padding: 40px 160px 40px 160px;
+    }
+}
+
+@media (min-width: 1440px){
+    .about_text_wrap{
+        align-self: center;
     }
 }
 
