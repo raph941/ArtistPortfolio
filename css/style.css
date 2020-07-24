@@ -721,3 +721,7 @@ body {
 }
 
 /* FOOTER ENDS */
+
+.swiper-pagination-bullet-active{
+    background-color: black;
+}
