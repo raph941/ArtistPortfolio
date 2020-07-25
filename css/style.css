@@ -18,7 +18,7 @@ body {
     color: #333333;
 }
 
-.body__wrapper{
+.body__wrapper, .navbar__wrapper, .footer__top, .footer__bottom{
     max-width: 1440px !important;
     margin: 0 auto !important;
 }
@@ -38,9 +38,12 @@ body {
 /* Hero Section */
 /* Navbar Starts */
 .navbar__wrapper{
-    box-shadow: 0px 0.5px 10px rgba(0, 0, 0, 0.15);
     padding-left: 80px;
     padding-right: 80px;
+}
+
+.hero__section{
+    box-shadow: 0px 0.5px 10px rgba(0, 0, 0, 0.15);
 }
 
 .nav-link{
@@ -678,10 +681,12 @@ body {
 /* CONTACT ENDS */
 
 /* FOOTER */
-
-.footer__top, .footer__bottom{
+footer{
     background-color: #111111;
     color: #FFFFFF;
+}
+
+.footer__top, .footer__bottom{
     font-weight: 400;
     border: 0px;
 }
