@@ -270,8 +270,8 @@ body {
     }
     .artist__name {
         color: #F7931E;
-        font-size: 70px;
-        line-height: 100px;
+        font-size: 60px;
+        line-height: 60px;
         width: 50vh;
     }
     .artist__image{
@@ -301,7 +301,7 @@ body {
     .artist__name {
         color: #F7931E;
         font-size: 60px;
-        line-height: 100px;
+        line-height: 60px;
         width: 50vh;
     }
     .artist__image{
@@ -331,7 +331,7 @@ body {
     .artist__name {
         color: #F7931E;
         font-size: 80px;
-        line-height: 130px;
+        line-height: 80px;
         width: 50vh;
     }
     .artist__caption{
@@ -343,7 +343,7 @@ body {
     .hero__text{
         z-index: 1;
         position: absolute;
-        margin-left: 8%;
+        margin-left: 6%;
     }
     .artist__image{
         margin-bottom: -50px;
@@ -351,8 +351,12 @@ body {
     }
 }
 
-@media (min-width: 1130px) and (max-width: 1190.px) {
-
+@media (min-width: 14409px) {
+    .hero__text{
+        z-index: 1;
+        position: absolute;
+        margin-left: 8%;
+    }
 }
 
 /* Masterhead Section Ends */
