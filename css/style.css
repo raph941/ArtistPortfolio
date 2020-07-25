@@ -335,7 +335,7 @@ body {
         width: 50vh;
     }
     .artist__caption{
-        font-size: 20px;
+        font-size: 0.7rem;
         line-height: 27px;
         letter-spacing: 4px;
         text-transform: uppercase;
@@ -588,6 +588,13 @@ body {
 
 .contact__btn, .contact__btn:hover{
     background: #AA2072;
+    border-radius: 10px;
+    color: #FFFFFF;
+    padding: 12px 32px 12px 32px;
+}
+
+.contact__btn:hover{
+    background: black;
     border-radius: 10px;
     color: #FFFFFF;
     padding: 12px 32px 12px 32px;
