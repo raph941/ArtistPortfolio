@@ -273,15 +273,13 @@ body {
     }
     .artist__image{
         width: 400px;
-        margin-left: 90%;
-    }
-    .artist__image{
         margin-bottom: -10px;
         margin-left: 90%;
     }
     .hero__text{
         z-index: 1;
         position: absolute;
+        margin-left: 8%;
     }
     .artist__caption{
         font-size: 1rem;
@@ -313,6 +311,7 @@ body {
     .hero__text{
         z-index: 1;
         position: absolute;
+        margin-left: 8%;
     }
     .artist__caption{
         font-size: 1rem;
@@ -347,6 +346,10 @@ body {
         margin-bottom: -50px;
         margin-left: 90%;
     }
+}
+
+@media (min-width: 1130px) and (max-width: 1190.px) {
+
 }
 
 /* Masterhead Section Ends */
