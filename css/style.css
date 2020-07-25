@@ -10,17 +10,22 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-body:not(.navbar__wrapper) {
-    max-width: 1440px;
-    margin: 0 auto;
+body {
     font-size: 1rem;
     line-height: 27px;
     color: #333333;
 }
 
 .body__wrapper{
-    
+    max-width: 1440px !important;
+    margin: 0 auto !important;
 }
+
+/* wrappers */
+/* .masterhead__section, .about__section, .frames__section, .exhibition__section, .contact__section, footer, .vect__wrap{
+    max-width: 1440px;
+    margin: 0 auto;
+} */
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {}
